@@ -35,8 +35,12 @@ end
 # Install bootstrap
 gem 'bootstrap-sass', '~> 3.3.5'
 
-# Intstall userbase gem
+# Install userbase gem
 gem 'devise', '>= 3.2.4'
+
+# Install simple form gem
+gem 'simple_form'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
