@@ -15,7 +15,7 @@ class Instructor::LessonsController < ApplicationController
 
 	def remove_authorized_for_current_session
 		if current_session.course.user != current_user
-			return render :text 'Unauthorized', :status => :unauthorized
+			return render :text => 'Unauthorized', :status => :unauthorized
 		end
 	end
 
