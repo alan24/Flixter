@@ -41,16 +41,20 @@ gem 'devise', '>= 3.2.4'
 # Install simple form gem
 gem 'simple_form'
 
+# Install FactoryGirl for TDD
+gem 'factory_girl_rails', '~> 4.0'
+
 # Install Carrierwave to setup images
 gem 'carrierwave'
 
 # Install Figaro
 gem "figaro"
 
-gem 'fog', '~> 1.3.1'
-
 # install mini magick to have better sized images with a lot less memory
 gem 'mini_magick', '~> 4.3.1'
+
+# install carrierwave-aws
+gem 'carrierwave-aws'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
