@@ -47,6 +47,8 @@ gem 'factory_girl_rails', '~> 4.0'
 # Install Carrierwave to setup images
 gem 'carrierwave'
 
+gem 'fog', '~> 1.3.1'
+
 # Install Figaro
 gem "figaro"
 
