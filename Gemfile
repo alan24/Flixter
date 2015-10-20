@@ -60,6 +60,9 @@ gem 'mini_magick', '~> 4.3.1'
 
 # install carrierwave-aws
 gem 'carrierwave-aws'
+
+# install credit card gem
+gem 'stripe'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
