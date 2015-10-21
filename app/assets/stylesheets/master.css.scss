@@ -45,6 +45,13 @@ h1, h2, h3, h4, h5, h6 .navbar {
 	padding: 20px;
 }
 
+.section-li {
+	border: 1px solid;
+	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+	padding: 20px;
+	margin: 20px;
+}
+
 .lesson {
 	background-color: black;
 	margin-top: 10px;
@@ -61,6 +68,25 @@ h1, h2, h3, h4, h5, h6 .navbar {
 .lesson a b {
 	font-weight: 100;
 	font-size: 25px;
+}
+
+.lessons li {
+	background: black;
+	color: white;
+	margin: 10px;
+	font-family: "Helvetica Neue", Helvetica;
+	font-weight: 100;
+	padding: 8px;
+	font-size: 15px;
+}
+
+.lessons p {
+	margin: 0;
+}
+
+.lessons li .b {
+	font-size: 25px;
+	font-weight: 100;
 }
 
 .hero {
@@ -100,4 +126,16 @@ h1, h2, h3, h4, h5, h6 .navbar {
   	border-radius: 3px;
   	padding:8px;
   	margin: 10px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul .header {
+	font-size: 25px;
+}
+
+ul .header .glyphicon {
+	font-size: 20px;
 }

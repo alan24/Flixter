@@ -33,7 +33,7 @@ group :doc do
 end
 
 # Install bootstrap
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'bootstrap-sass', '~> 3.3.5.1'
 
 # Install sprockts
 gem 'sprockets', '2.11.0'
