@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
   <link href="http://vjs.zencdn.net/4.6/video-js.css" rel="stylesheet">
   <script src="http://vjs.zencdn.net/4.6/video.js"></script>
+  <meta name="viewport" content="width width-device, initial-scale=1">
   <style>
     .video-js {padding-top: 56.25%}
     .vjs-fullscreen {padding-top: 0px}
@@ -25,7 +26,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Flixter</a>
+        <%= link_to 'Flixter', root_path, :class => "navbar-brand" %>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,17 +44,6 @@
             <li><%= link_to 'Sign In', new_user_session_path %></li>
             <li><%= link_to 'Sign Up', new_user_registration_path %></li>
           <% end %>
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -72,7 +62,7 @@
 
 <br class="clear" />
 
-  <div id="footer" class="Site-content">
+  <div id="footer">
     <div class="container">
       <div class="col-xs-12 col-sm-3">
         <b>Teachers</b>
