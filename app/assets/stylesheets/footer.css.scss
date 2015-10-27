@@ -21,6 +21,12 @@ html, body {
 	height: 100%;
 }
 
+.Site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
 #wrap {
 	min-height: 100%;
 	height: auto;
@@ -41,6 +47,10 @@ html, body {
 #footer a {
 	color: white;
 	font-weight: 100;
+}
+
+.Site-content {
+	flex: 1;
 }
 
 .social a:hover {
