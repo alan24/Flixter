@@ -11,7 +11,18 @@ FactoryGirl.define do
 		title "Chemistry"
 		description "Mix chemicals"
 		cost 50
-		association :user
+		association :user, factory: :user
+	end
+
+	factory :section do
+		title "Introduction"
+		course
+	end 
+
+	factory :lesson do 
+		title "Introduction"
+		subtitle "Strings"
+		section
 	end
 
 end

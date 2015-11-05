@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class SectionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  	
+  	test "Title Validation Error" do
+  		section = FactoryGirl.build(:section, :title => '')
+  		isValid = section.valid?
+  		assert_equal false, isValid
+  	end
 end

@@ -13,5 +13,4 @@ class CoursesControllerTest < ActionController::TestCase
 		get :show, :id => course.id
 		assert_response :success
 	end
-
 end	
