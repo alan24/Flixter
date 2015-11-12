@@ -10,14 +10,15 @@ class Instructor::LessonsController < ApplicationController
 
 	def update
 		current_lesson.update_attributes(lesson_params)
-		render :text => 'updated!'
+		# render :text => 'updated!' shows the text updated
+		redirect_to instructor_lesson_path(current_lesson)
 	end
 
 	private 
 
 	def require_authorized_for_current_lesson
-		puts current_lesson.section.course.user.new_record?
-		puts current_user.new_record?
+		# puts current_lesson.section.course.user.new_record?
+		# puts current_user.new_record?
 		if current_lesson.section.course.user != current_user
 			render :text => 'Unauthorized', :status => :unauthorized
 		end
